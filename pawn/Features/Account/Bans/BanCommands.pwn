@@ -16,7 +16,7 @@ class BanCommands {
      * has unbanned the user or the ban expiration date has been reached.
      *
      * @param playerId Id of the player who typed the command.
-     * @command /ban [player] [days=3] [reason]
+     * @command /ban [player] [days=31] [reason]
      */
     @command("ban")
     public onBanCommand(playerId, params[]) {
@@ -24,7 +24,7 @@ class BanCommands {
             return 0;
 
         if (Command->parameterCount(params) < 2) {
-            SendClientMessage(playerId, Color::Information, "Usage: /ban [player] [days=3] [reason]");
+            SendClientMessage(playerId, Color::Information, "Usage: /ban [player] [days=31] [reason]");
             return 1;
         }
 

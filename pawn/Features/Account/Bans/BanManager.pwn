@@ -43,7 +43,7 @@ native MurmurIIIHashGenerateHash(key[], len, hash[]);
 class BanManager {
     // If an administrator does not specify how long a ban should last for, what is the default
     // duration we should apply to the ban? Specify this in number of days.
-    public const DefaultBanDuration = 3;
+    public const DefaultBanDuration = 31;
 
     // The query we use to verify whether a player can play on LVP.
     new m_verifyQuery;
